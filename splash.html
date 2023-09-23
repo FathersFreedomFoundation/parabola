@@ -1,62 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Splash Page</title>
-        <link rel="stylesheet" href="styles.css">
-        <!-- JavaScript to redirect to the second page after 4 seconds -->
-        <script>
-            setTimeout(() => {
-                window.location.href = '/second_page.html';
-            }, 4000);
-        </script>
-    </head>
-    <body>
-        <div class="canvas">
-    <div class="energy-bar"></div>
-    <div class="energy-bar"></div>
-    <div class="energy-bar"></div>
-    <div class="energy-bar"></div>
-    <div class="energy-bar"></div>
-    <div class="energy-bar"></div>
-    <div class="energy-bar"></div>
-    <div class="energy-bar"></div>
-    <div class="energy-bar"></div>
-    <div class="energy-bar"></div>
-    <div class="energy-bar"></div>
-    <div class="energy-bar"></div>
-    <div class="energy-bar"></div>
-    <div class="energy-bar"></div>
-    <div class="energy-bar"></div>
-    <div class="energy-bar"></div>
-    <div class="energy-bar"></div>
-    <div class="energy-bar"></div>
-    <div class="energy-bar"></div>
-    <div class="energy-bar"></div>
-    <div class="energy-bar"></div>
-  
-    <div class="pyramid">
-      <div class="pyramid-bar"></div>
-      <div class="pyramid-bar"></div>
-      <div class="pyramid-bar"></div>
-      <div class="pyramid-bar"></div>
-      <div class="pyramid-bar"></div>
-      <div class="pyramid-bar"></div>
-      <div class="pyramid-bar"></div>
-      <div class="pyramid-bar"></div>
-      <div class="pyramid-bar"></div>
-      <div class="pyramid-bar"></div>
-      <div class="pyramid-bar"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+    <link rel="stylesheet" type="text/css" href="second_page.css">
+</head>
+<body>
+
+<!-- Wrapped the main content in a new div with the class 'center-container' -->
+<div class="center-container">
+    <div class="section">
+        <div class="container">
+            <div class="row full-height justify-content-center">
+                <div class="col-12 text-center align-self-center py-5">
+                    <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                        <h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+                        <label for="reg-log">Toggle Login/Signup</label>
+                        <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+                        <label for="reg-log"></label>
+                        <div class="card-3d-wrap mx-auto">
+                            <div class="card-3d-wrapper">
+                                <div class="card-front">
+                                    <div class="center-wrap">
+                                        <div class="section text-center">
+                                            <h4 class="mb-4 pb-3">Log In</h4>
+                                            <div class="form-group">
+                                                <label for="logemail">Email:</label>
+                                                <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
+                                                <i class="input-icon uil uil-at"></i>
+                                            </div>  
+                                            <div class="form-group mt-2">
+                                                <label for="logpass">Password:</label>
+                                                <input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
+                                                <i class="input-icon uil uil-lock-alt"></i>
+                                            </div>
+                                            <a href="#" class="btn mt-4">submit</a>
+                                            <p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="center-wrap">
+                                        <div class="section text-center">
+                                            <h4 class="mb-4 pb-3">Sign Up</h4>
+                                            <div class="form-group">
+                                                <label for="logname">Full Name:</label>
+                                                <input type="text" name="logname" class="form-style" placeholder="Your Full Name" id="logname" autocomplete="off">
+                                                <i class="input-icon uil uil-user"></i>
+                                            </div>  
+                                            <div class="form-group mt-2">
+                                                <label for="logemail2">Email:</label>
+                                                <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail2" autocomplete="off">
+                                                <i class="input-icon uil uil-at"></i>
+                                            </div>  
+                                            <div class="form-group mt-2">
+                                                <label for="logpass2">Password:</label>
+                                                <input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass2" autocomplete="off">
+                                                <i class="input-icon uil uil-lock-alt"></i>
+                                            </div>
+                                            <a href="#" class="btn mt-4">submit</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-   <!-- Custom Text "N00B" -->
-   <div class="custom-text">
-    <div class="custom-n">Π</div>
-    <div class="custom-zero"></div>
-    <div class="custom-zero"></div>
-    <div class="custom-b">&#x20BF;</div>s
 </div>
-</div>
+
 </body>
 </html>
